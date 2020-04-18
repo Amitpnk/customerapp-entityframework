@@ -8,28 +8,14 @@ Step by step tutorials creating Entity framework 6
 - [Sending Feedback](#sending-feedback)
 - [About Entity Framework Core](#about-entity-framework-core)
 - [Sample application with each labs](#sample-application-with-each-steps)
-    - Creating Entity Framework Core
         - [Step 1 - Create Application](#step-1---create-application)
-    - Controlling database creation and Schema changes
-        - [Step 2 - Adding EntityFramework via Nuget ](#step-2---adding-entityframework-via-nuget)
-        - [Step 3 - Create Console App](#step-3---adding-migration)
-        - [Step 4 - Adding migration](#step-4---adding-migration)
-        - [Step 5 - Script migration for production DB](#step-5---script-migration-for-production-db)
-        - [Step 6 - Reverse engineering from existing database](#step-6---reverse-engineering-from-existing-database)
-    - Mapping many to mmany and one to one relationship
-        - [Step 7 - Many to many relationship](#step-7---many-to-many-relationship)
-        - [Step 8 - One to one relationship](#step-8---one-to-one-relationship)
-        - [Step 9 - Visualising how EF Core model looks](#step-9---visualising-how-ef-core-model-looks)
-        - [Step 10 - Running Migration for Model changes](#step-10---running-migration-for-model-changes)
-    - Interacting with EF Core data model
-        - [Step 11 - Adding logging to EF Core's](#step-11---adding-logging-to-ef-cores)
-        - [Step 12 - For bulk operations](#step-12---for-bulk-operations)
-        - [Step 13 - Understading queries](#step-13---understading-queries)
-        - [Step 14 - Aggregating in Queries](#step-14---aggregating-in-queries)
-        - [Step 15 - Updating object](#step-15---updating-object)
-        - [Step 16 - Deleting object](#step-16---deleting-object)
+s        - [Step 2 - Adding EntityFramework via Nuget ](#step-2---adding-nuget-package-manager)
+        - [Step 3 - Adding migration](#step-3---adding-migration)
+        - [Step 4 - Adding DbContext file](d)
+        - [Step 5 - Create Console App](#step-5---create-console-app)
+        - [Step 6 - Visualising how EF Core model looks](#step-6---visualising-how-ef-core-model-looks)
+   
      
-
 ## Sending Feedback
 
 For feedback can drop mail to my email address amit.naik8103@gmail.com or you can create [issue](https://github.com/Amitpnk/angular-application/issues/new)
@@ -86,7 +72,7 @@ public class Address
     * Add-Migration init
     * Update-Database
 
-### Step 4 - Adding migration
+### Step 4 - Adding DbContext file
  
 Add CustomerContext.cs in <b>EFCoreCustomer.Data</b>
 
