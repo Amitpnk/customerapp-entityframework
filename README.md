@@ -8,12 +8,12 @@ Step by step tutorials creating Entity framework 6
 - [Sending Feedback](#sending-feedback)
 - [About Entity Framework Core](#about-entity-framework-core)
 - [Sample application with each labs](#sample-application-with-each-steps)
-        - [Step 1 - Create Application](#step-1---create-application)
-s        - [Step 2 - Adding EntityFramework via Nuget ](#step-2---adding-nuget-package-manager)
-        - [Step 3 - Adding migration](#step-3---adding-migration)
-        - [Step 4 - Adding DbContext file](#step-4---adding-dbcontext-file)
-        - [Step 5 - Create Console App](#step-5---create-console-app)
-        - [Step 6 - Visualising how EF Core model looks](#step-6---visualising-how-ef-core-model-looks)
+    - [Step 1 - Create Application](#step-1---create-application)
+s       - [Step 2 - Adding EntityFramework via Nuget ](#step-2---adding-nuget-package-manager)
+    - [Step 3 - Adding migration](#step-3---adding-migration)
+    - [Step 4 - Adding DbContext file](#step-4---adding-dbcontext-file)
+    - [Step 5 - Create Console App](#step-5---create-console-app)
+    - [Step 6 - Visualising how EF Core model looks](#step-6---visualising-how-ef-core-model-looks)
    
      
 ## Sending Feedback
