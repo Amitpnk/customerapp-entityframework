@@ -10,8 +10,8 @@ Step by step tutorials creating Entity framework 6
 - [Sample application with each labs](#sample-application-with-each-steps)
     - [Step 1 - Create Application](#step-1---create-application)
     - [Step 2 - Adding EntityFramework via Nuget ](#step-2---adding-nuget-package-manager)
-    - [Step 3 - Adding migration](#step-3---adding-migration)
-    - [Step 4 - Adding DbContext file](#step-4---adding-dbcontext-file)
+    - [Step 3 - Adding DbContext file](#step-3---adding-dbcontext-file)
+    - [Step 4 - Adding migration](#step-4---adding-migration)
     - [Step 5 - Create Console App](#step-5---create-console-app)
     - [Step 6 - Visualising how EF Core model looks](#step-6---visualising-how-ef-core-model-looks)
    
@@ -65,14 +65,7 @@ public class Address
 }
 ```
 
-### Step 3 - Adding migration
- 
-* In Package Manager console run below command, under <b>EFCoreCustomer.Data</b>
-    * enable-migrations (this will create configuration)
-    * Add-Migration init
-    * Update-Database
-
-### Step 4 - Adding DbContext file
+### Step 3 - Adding DbContext file
  
 Add CustomerContext.cs in <b>EFCoreCustomer.Data</b>
 
@@ -89,6 +82,13 @@ public class CustomerContext : DbContext
 ```
 
 Use EF Core Power Tool Extension for VS 2019
+
+### Step 4 - Adding migration
+ 
+* In Package Manager console run below command, under <b>EFCoreCustomer.Data</b>
+    * enable-migrations (this will create configuration)
+    * Add-Migration init
+    * Update-Database
 
 ### Step 5 - Create Console App 
 
