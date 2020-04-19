@@ -1,5 +1,5 @@
-﻿using EFCoreCustomer.Data;
-using EFCoreCustomer.Domain;
+﻿using CustomerEF.Data;
+using CustomerEF.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;

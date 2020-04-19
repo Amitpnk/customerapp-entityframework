@@ -1,13 +1,8 @@
-﻿using EFCoreCustomer.Data.Migrations;
-using EFCoreCustomer.Domain;
-using System;
-using System.Collections.Generic;
+﻿using CustomerEF.Data.Migrations;
+using CustomerEF.Domain;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace EFCoreCustomer.Data
+namespace CustomerEF.Data
 {
     public class CustomerContext : DbContext
     {

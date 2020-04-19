@@ -1,4 +1,4 @@
-﻿namespace EFCoreCustomer.Data.Migrations
+﻿namespace CustomerEF.Data.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

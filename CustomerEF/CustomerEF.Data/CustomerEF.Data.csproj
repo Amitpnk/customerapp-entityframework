@@ -5,19 +5,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{01D690B1-818C-4D20-AE05-CE52E1CC9D43}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApplication</RootNamespace>
-    <AssemblyName>ConsoleApplication</AssemblyName>
+    <ProjectGuid>{90573DB1-CD04-490F-91A3-71611B0F08C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomerEF.Data</RootNamespace>
+    <AssemblyName>CustomerEF.Data</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -27,7 +26,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -53,7 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="CustomerContext.cs" />
+    <Compile Include="Migrations\202004180547029_Initial-setup.cs" />
+    <Compile Include="Migrations\202004180547029_Initial-setup.designer.cs">
+      <DependentUpon>202004180547029_Initial-setup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,13 +64,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EFCoreCustomer.Data\EFCoreCustomer.Data.csproj">
-      <Project>{90573DB1-CD04-490F-91A3-71611B0F08C3}</Project>
-      <Name>EFCoreCustomer.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EFCoreCustomer.Domain\EFCoreCustomer.Domain.csproj">
+    <EmbeddedResource Include="Migrations\202004180547029_Initial-setup.resx">
+      <DependentUpon>202004180547029_Initial-setup.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerEF.Domain\CustomerEF.Domain.csproj">
       <Project>{40B4BDBE-489E-4CA4-BC41-FF7EFD029D54}</Project>
-      <Name>EFCoreCustomer.Domain</Name>
+      <Name>CustomerEF.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
